@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 20%);
+            grid-template-rows: repeat(5, 20%);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            justify-content: center;  
+            align-content: center; 
+            background-color: black;
+            color: white;
+            gap: 10px;
+            width: 30%;
+            margin: auto;
+            height: 500px;
+        }
+
+        .digits {
+            grid-column: 1/5;
+            grid-row: 1/1;
+            background-color: rgb(15, 171, 237);
+            margin-top: 40px;
+    
+        }
+
+        .seven,
+        .eigh,
+        .tens,
+        .four,
+        .five,
+        .sixx,
+        .one,
+        .two,
+        .thre,
+        .zero {
+            width: 60px;
+            height: 60px;
+            background-color: rgb(32, 32, 83);
+            justify-self: stretch;
+        }
+
+        .enter {
+            width: 60px;
+            height: 390px;
+            grid-column: 4/4;
+            grid-row: 2/6;
+            background-color: rgb(32, 32, 83);
+            justify-self: stretch;
+        }
+
+        .zero {
+            grid-column: 2/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="digits">****</div>
+        <div class="seven">7</div>
+        <div class="eigh">8</div>
+        <div class="tens">9</div>
+        <div class="enter">Enter</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="sixx">6</div>
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="thre">3</div>
+        <div class="zero">0</div>
+    </div>
+</body>
+
+</html>
